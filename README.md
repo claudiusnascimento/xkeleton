@@ -87,6 +87,14 @@ sudo docker-compose exec app vendor/bin/phpunit
 docker exec -u root -t -i app /bin/bash
 ```
 
+## What you get with this boilerplate?
+
+- User admin
+- Pages admin
+- Blog Admin
+- Forget password (need email credentials)
+- Wysiwyg (Summernote)
+
 ## Some peculiarities of the boilerplate you should to know
 
 - Admin routes must to be put in *routes/admin.php* because that routes has the auth middleware
@@ -108,6 +116,14 @@ docker exec -u root -t -i app /bin/bash
 > [Summernote Wysiwyg](https://summernote.org/)
 
 > [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+
+## Packages indications to use with this boilerplate
+
+- [ClaudiusNascimento/XACL](https://github.com/claudiusnascimento/xacl)
+** A simple xacl groups/routes based **
+
+- [ClaudiusNascimento/HtmlBlocks](https://github.com/claudiusnascimento/html-blocks)
+** A package that provides many html-blocks to your models **
 
 ### enjoy...
 
