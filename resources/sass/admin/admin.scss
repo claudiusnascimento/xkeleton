@@ -1,0 +1,23 @@
+// imports
+
+@import "./toastr.scss";
+@import "./gentelella-overrides";
+
+// model tables
+
+form.form-destroy {
+    display: inline-block;
+    position: absolute;
+    padding-left: 5px;
+
+    button {
+        border: none;
+        background: none;
+    }
+}
+
+// Crud validation errors
+
+.validator-error {
+    color: #e80800;
+}
