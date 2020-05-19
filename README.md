@@ -99,6 +99,8 @@ docker exec -u root -t -i app /bin/bash
 
 - Models are in *App/Models*
 
+- This package dont use the laravel login system
+
 - You dont have to use the *CrudTraits* - it's too much abstraction :0
 
 ## This admin boilerplate uses:
