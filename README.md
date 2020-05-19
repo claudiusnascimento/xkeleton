@@ -70,12 +70,10 @@ http://localhost:8080/admin
 ```
 
 ## Log with credentials
-```
+
 email: ***admin@admin.com*** 
-```
-```
 pass: ***123456***
-```
+
 
 ### To tests run
 ``` bash
