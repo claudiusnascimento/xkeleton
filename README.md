@@ -1,4 +1,4 @@
-# LARAVEL SKELETON
+# LARAVEL XKELETON
 
 ## About
 
