@@ -9,45 +9,37 @@ Soon
 
 ## Clone the repo
 
-```
-https://github.com/claudiusnascimento/skeleton.git
+``` bash
+git clone https://github.com/claudiusnascimento/skeleton.git
 ```
 
 ## Up the container
 
-```
+Inside the project folder run the followed code to up the containers
+
+``` bash
 docker-compose up -d
 ```
 
-## Access the container with 'sudo' permissions
+## Install project
 
-docker exec -u root -t -i app /bin/bash
-
-## Inside the container, run
-
-```
-composer install
+``` bash
+sudo docker-compose exec app composer install
 ```
 ## Folder permissions, inside the container yet
-```
-chmod -R 777 storage/
-chmod -R 777 bootstrap/
+``` bash
+sudo docker-compose exec app chmod -R 777 storage/
+sudo docker-compose exec app chmod -R 777 bootstrap/
 ```
 
 ## Copy .env.axample
-```
+``` bash
 cp .env.example .env
 ```
 
 ## Generate the key
-```
-php artisan key:generate
-```
-
-## Exit the container
-
-```
-exit
+``` bash
+sudo docker-compose exec app php artisan key:generate
 ```
 
 ## Access the application
@@ -55,9 +47,63 @@ exit
 http://localhost:8080
 ```
 
-## To run migrations outside the container
-```
+## Run migrations
+``` bash
 sudo docker-compose exec app php artisan migrate
 ```
 
-### if you are usind docker, pleas run testes inside the container
+## Seeding
+
+Uncomment in *Illuminate\Database\Seeder\DatabaseSeeder* the seeds that you want and...
+``` bash
+sudo docker-compose exec app php artisan db:seed
+```
+After that is good practice comment the seeds again
+
+## Access the admin
+```
+http://localhost:8080/admin
+```
+
+## Log with credentials
+```
+email: *admin@admin.com* 
+```
+```
+pass: *123456* 
+```
+
+### To tests run
+``` bash
+sudo docker-compose exec app vendor/bin/phpunit
+```
+
+## To access the container with 'sudo' permissions run
+``` bash
+docker exec -u root -t -i app /bin/bash
+```
+
+## Some peculiarities of the boilerplate you should to know
+
+- Admin routes must to be put in *routes/admin.php* because that routes has the auth middleware
+
+- Models are in *App/Models*
+
+- You dont have to use the *CrudTraits* - it's too much abstraction :0
+
+## This admin boilerplate uses:
+
+> [Gentelella Admin Template](https://colorlib.com/polygon/gentelella/) 
+
+> The Gentelella template are provided by the [claudiusnascimento/gentelelladashboard](https://github.com/claudiusnascimento/gentelelladashboard)
+
+> Bootstrap v3.3.7
+
+> jQuery v2.2.4
+
+> [Summernote Wysiwyg](https://summernote.org/)
+
+> [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+
+### enjoy...
+
