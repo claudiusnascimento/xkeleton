@@ -109,9 +109,9 @@ docker exec -u root -t -i app /bin/bash
 
 > The Gentelella template are provided by the [claudiusnascimento/gentelelladashboard](https://github.com/claudiusnascimento/gentelelladashboard)
 
-> Bootstrap v3.3.7
+> Bootstrap v3.3.7 (came with gentelella)
 
-> jQuery v2.2.4
+> jQuery v2.2.4 (came with gentelella)
 
 > [Summernote Wysiwyg](https://summernote.org/)
 
