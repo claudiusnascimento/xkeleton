@@ -2,7 +2,7 @@
 
 ## About
 
-Soon
+Just another laravel boilerplate...
 
 
 # Installation
@@ -26,23 +26,25 @@ docker-compose up -d
 ``` bash
 sudo docker-compose exec app composer install
 ```
-## Folder permissions, inside the container yet
+## Folder permissions
 ``` bash
 sudo docker-compose exec app chmod -R 777 storage/
 sudo docker-compose exec app chmod -R 777 bootstrap/
 ```
 
 ## Copy .env.axample
+
 ``` bash
 cp .env.example .env
 ```
 
 ## Generate the key
+
 ``` bash
 sudo docker-compose exec app php artisan key:generate
 ```
 
-## Access the application
+## Accessing the application
 ```
 http://localhost:8080
 ```
@@ -54,11 +56,13 @@ sudo docker-compose exec app php artisan migrate
 
 ## Seeding
 
-Uncomment in *Illuminate\Database\Seeder\DatabaseSeeder* the seeds that you want and...
+Uncomment in ***Illuminate\Database\Seeder\DatabaseSeeder*** the seeds that you want and...
+
 ``` bash
 sudo docker-compose exec app php artisan db:seed
 ```
-After that is good practice comment the seeds again
+
+*After that is good practice comment the seeds again*
 
 ## Access the admin
 ```
@@ -67,10 +71,10 @@ http://localhost:8080/admin
 
 ## Log with credentials
 ```
-email: *admin@admin.com* 
+email: ***admin@admin.com*** 
 ```
 ```
-pass: *123456* 
+pass: ***123456***
 ```
 
 ### To tests run
