@@ -1,5 +1,5 @@
 # LARAVEL XKELETON WITH DOCKER 
-*** if you what to use without docker remove the 'sudo docker-compose exec' from commands***
+*** if you what to use without docker remove the 'sudo docker-compose exec app' from commands***
 
 ## About
 
