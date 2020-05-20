@@ -16,7 +16,8 @@ git clone https://github.com/claudiusnascimento/skeleton.git
 
 ## Up the container
 
-Now, ***Inside the project folder*** run the followed code to up the containers
+Now, ***Inside the project folder*** run the followed code to up the containers.
+(if you don't use docker, jump to next step)
 
 ``` bash
 docker-compose up -d
