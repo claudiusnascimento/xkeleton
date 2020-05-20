@@ -122,7 +122,7 @@ docker exec -u root -t -i app /bin/bash
 ## Packages indications to use with this boilerplate
 
 - [ClaudiusNascimento/XACL](https://github.com/claudiusnascimento/xacl)
-** A simple xacl groups/routes based **
+** A simple ACL groups/routes based **
 
 - [ClaudiusNascimento/HtmlBlocks](https://github.com/claudiusnascimento/html-blocks)
 ** A package that provides many html-blocks to your models **
