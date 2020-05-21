@@ -1,4 +1,5 @@
-# LARAVEL SKELETON
+# LARAVEL XKELETON WITH DOCKER 
+*** if you do not use docker, please remove the 'sudo docker-compose exec app' from commands***
 
 ## About
 
@@ -15,7 +16,8 @@ git clone https://github.com/claudiusnascimento/skeleton.git
 
 ## Up the container
 
-Inside the project folder run the followed code to up the containers
+Now, ***Inside the project folder*** run the followed code to up the containers.
+(if you don't use docker, jump to next step)
 
 ``` bash
 docker-compose up -d
@@ -70,12 +72,10 @@ http://localhost:8080/admin
 ```
 
 ## Log with credentials
-```
-email: ***admin@admin.com*** 
-```
-```
-pass: ***123456***
-```
+
+- email: ***admin@admin.com*** 
+- pass: ***123456***
+
 
 ### To tests run
 ``` bash
@@ -101,6 +101,8 @@ docker exec -u root -t -i app /bin/bash
 
 - Models are in *App/Models*
 
+- This package dont use the laravel login system
+
 - You dont have to use the *CrudTraits* - it's too much abstraction :0
 
 ## This admin boilerplate uses:
@@ -109,9 +111,9 @@ docker exec -u root -t -i app /bin/bash
 
 > The Gentelella template are provided by the [claudiusnascimento/gentelelladashboard](https://github.com/claudiusnascimento/gentelelladashboard)
 
-> Bootstrap v3.3.7
+> Bootstrap v3.3.7 (came with gentelella)
 
-> jQuery v2.2.4
+> jQuery v2.2.4 (came with gentelella)
 
 > [Summernote Wysiwyg](https://summernote.org/)
 
@@ -120,7 +122,7 @@ docker exec -u root -t -i app /bin/bash
 ## Packages indications to use with this boilerplate
 
 - [ClaudiusNascimento/XACL](https://github.com/claudiusnascimento/xacl)
-** A simple xacl groups/routes based **
+** A simple ACL groups/routes based **
 
 - [ClaudiusNascimento/HtmlBlocks](https://github.com/claudiusnascimento/html-blocks)
 ** A package that provides many html-blocks to your models **
