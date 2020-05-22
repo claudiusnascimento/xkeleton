@@ -5,7 +5,7 @@
 
 Just another laravel boilerplate...
 
-## [you can read the docs here](https://claudiusnascimento.github.io/xkeleton-docs/)
+## [DOCS HERE](https://claudiusnascimento.github.io/xkeleton-docs/)
 
 
 ## What you get with this boilerplate?
